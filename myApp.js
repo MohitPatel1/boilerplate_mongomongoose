@@ -28,11 +28,11 @@ function createAndSavePerson(done) {
     age: 19,
     favoriteFoods: ['pani-puri']
   })
-  person.save((err,date) => {
+  person.save((err,data) => {
     if(err){
       done(err)
     }
-    done(null /*, data*/);
+    done(null , data);
   })
 }
 
